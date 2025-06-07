@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: var(--font1);
+    font-weight: bold;
+}
+h1{
+    text-transform: uppercase;
+}
+body{
+    display: block;
+}
+/* cores utilizadas */
+:root{
+    --cor1: #2BB7D7;
+    --cor2: #266F80;
+    --cor3: #000000;
+    --cor4: #FAFAFA;
+
+    --font1: "Source Sans 3", "sans-serif";
+
+}
+
+/* nav */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor4);
+    color: var(--cor3);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 15px;
+    border: 1px solid black;
+    box-shadow: 0px 2px 3px black;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+div.navegar a{
+    margin: 30px;
+    text-decoration: none;
+    color: var(--cor3);
+}
+div.img-perfil{
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+div.img-perfil img{
+    height: 60px;
+    padding: 10px;
+    margin: 0px 0px 0px 50px;
+    border-radius: 50%;
+}
+
+/* Home */
+div.inicio{
+    margin-top:58px ;
+    background-image: url(../img/background-white.jpg);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+div.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 3.5px black;
+}
+div.redes-sociais a{
+    margin: 10px;
+}
+div.redes-sociais a img:hover{
+    background-color:#2bb7d74e;
+    border-radius: 3px;
+
+}
+div.redes-sociais a img{
+    height: 30px;
+}
+div.eu{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+div.eu h1{
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+div.eu p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+}
+div.button-projetos{
+    margin-top: 100px;
+    text-align: center;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    width: 150px;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+div.button-projetos:hover{
+    opacity: 0.7;
+    transition: 0.2s;
+}

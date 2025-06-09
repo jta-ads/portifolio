@@ -105,6 +105,8 @@ div.eu p{
     font-weight: lighter;
     font-size: 20px;
     text-align: center;
+    width: 70%;
+    font-style: italic;
 }
 div.button-projetos{
     margin-top: 100px;
@@ -119,4 +121,58 @@ div.button-projetos{
 div.button-projetos:hover{
     opacity: 0.7;
     transition: 0.2s;
+}
+
+/* Sobre Mim */
+
+div.about{
+    background-color: var(--cor4);
+    padding: 30px;
+}
+div.about-me {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.traco{
+    border: 2px solid var(--cor2);
+    border-radius: 2px;
+    width: 50px;
+    margin: 30px;
+}
+div.about-me p{
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 50px;
+    width: 40%;
+
+}
+div.bio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+div.conhecer{
+    width: 550px;
+}
+div.conhecer p{
+    font-weight: lighter;
+    margin-top: 20px;
+    text-align: justify;
+}
+div.skills h2{
+    margin-bottom: 20px;
+}
+div.skills ul li{
+    display: inline;
+    margin: 10px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    font-weight: lighter;
+    padding: 5px 13px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 3px var(--cor3);
 }

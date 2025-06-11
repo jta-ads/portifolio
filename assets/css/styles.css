@@ -192,6 +192,7 @@ div.skills ul li{
 /* Projetos */
 div.project-home{
     padding-top: 9em;
+    padding-bottom: 12em;
     background-color: var(--cor5);
 }
 div.project{
@@ -227,4 +228,53 @@ div.description p{
 }
 div.description div.button-projetos{
     margin: 6px;
+}
+/* Contato */
+div.container-contact{
+    background-image: url(../img/background-white.jpg);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9em;
+    flex-direction: column;
+}
+form.form-contact{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    background-color: var(--cor1);
+    padding: 30px;
+    border-radius: 10px;
+}
+form.form-contact input{
+    border-radius: 5px;
+    padding-left:20px ;
+    margin-bottom: 20px;
+    height: 40px;
+    border: none;
+   
+}
+form.form-contact label{
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+form.form-contact textarea{
+    border-radius: 5px;
+    padding: 15px ;
+    margin-bottom: 20px;
+    height: 100px;
+    border: none;
+}
+form.form-contact input[type=submit]{
+    margin-top: 50px;
+    text-align: center;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    height: 40px;
+    width: 150px;
+    padding: 1px;
+    
 }

@@ -48,11 +48,15 @@ nav{
     
     
 }
+div.navegar{
+    display: flex;
+    align-items: center;
+}
 div.navegar a{
     margin: 30px;
     text-decoration: none;
     color: var(--cor3);
-    
+
 }
 div.img-perfil{
     display:flex;
@@ -64,6 +68,15 @@ div.img-perfil img{
     padding: 10px;
     margin: 0px 0px 0px 50px;
     border-radius: 50%;
+}
+/* menu burguer bar */
+
+div.menu-bar{
+    display: none;
+}
+div.menu-bar i{
+    font-size: 25px;
+    padding-right:30px;
 }
 
 /* Home */
@@ -323,4 +336,66 @@ div.rodape p{
 }
 div.rodape p a{
     color: var(--cor5);
+}
+
+/* responsividade */
+
+@media  (max-width: 850px) {
+    div.menu-bar{
+        display: block;
+    }
+    div.navegar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 88px;
+        background-color: var(--cor4);
+        width: 100%;
+        gap: 0;
+        cursor: pointer;
+        overflow: hidden;
+        
+    }
+    div#menubar{
+        transition: 0.3s;
+    }
+    div.redes-sociais{
+        display: none;
+    }
+    div.eu h1{
+        font-size: 40px;
+    }
+    div.eu p{
+        font-size: 15px;
+    }
+    div.bio{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.conhecer{
+        text-align: center;
+    }
+    div.skills{
+        margin: 80px;
+        width: 565px;
+        align-self: center;
+    }
+    div.container-project{
+        flex-direction: column;
+        gap: 0;
+    }
+    div.container-project img{
+        height: 60px;
+    }
+    div.description{
+        width: 400px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: justify;
+    }
+    
 }

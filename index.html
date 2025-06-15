@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/a68b25948c.js" crossorigin="anonymous" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
 
     <title>Portifólio | José Ribamar </title>
 </head>
@@ -13,100 +15,104 @@
         <div class="img-perfil">
             <img src="assets/img/perfil.png" alt="perfil"> <span> José Ribamar</span>
         </div>
-        <div class="navegar">
+        <div class="navegar" id="menubar">
             <a href="#inicio">Inicio</a>
             <a href="#about-me">Sobre mim</a>
             <a href="#project-home">Projetos</a>
             <a href="#contact">Contato</a>
         </div>
-    </nav>
-  
-    <div class="inicio" id="inicio">
-        <div class="redes-sociais">
-            <a href="https://www.instagram.com/mr_castr/" target="_blank"><img src="assets/img/instagram.png" alt="icon-instagram"></a>
-            <a href="https://github.com/jta-ads" target="_blank"><img src="assets/img/github.png" alt="icon-gitub"></a>
-            <a href="https://www.linkedin.com/in/jta-ads/" target="_blank"><img src="assets/img/linkedin.png" alt="icon-linkedin"></a>
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars" onclick="menuBar()"></i>
         </div>
-        <div class="eu">
-            <h1>
-                Olá, Eu sou José Ribamar
-            </h1>
-            <p>Desenvolvedor web em início de carreira, focado em criar interfaces modernas e funcionais. Apaixonado por resolver problemas com criatividade e eficiência.</p>
-            <div class="button-projetos">
-                Projetos
+    </nav>
+    <main>
+        <div class="inicio" id="inicio">
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/mr_castr/" target="_blank"><img src="assets/img/instagram.png" alt="icon-instagram"></a>
+                <a href="https://github.com/jta-ads" target="_blank"><img src="assets/img/github.png" alt="icon-gitub"></a>
+                <a href="https://www.linkedin.com/in/jta-ads/" target="_blank"><img src="assets/img/linkedin.png" alt="icon-linkedin"></a>
+            </div>
+            <div class="eu">
+                <h1>
+                    Olá, Eu sou José Ribamar
+                </h1>
+                <p>Desenvolvedor web em início de carreira, focado em criar interfaces modernas e funcionais. Apaixonado por resolver problemas com criatividade e eficiência.</p>
+                <div class="button-projetos">
+                    Projetos
+                </div>
+                
+            </div>
+            <div></div>
+        </div>
+        <div class="about" id="about-me">
+            <div class="about-me" id="me">
+                <h1 >Sobre mim</h1>
+                <div class="traco"></div>
+                <p>Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais, principalmente em termos de programação e tecnologia.</p>
+            </div>
+            <div class="bio">
+                <div class="conhecer">
+                    <h2>Venha me conhecer!</h2>
+                    <p>Sou cristão e casado com Francisca de Sousa Castro e desenvolvedor web com foco em front-end, especializado na criação e manutenção de interfaces modernas e funcionais para sites e aplicações web — sempre com o objetivo de contribuir para o sucesso do produto como um todo.</p>
+                    <p>Confira alguns dos meus projetos na seção Projetos para ver um pouco do que venho desenvolvendo.</p>                
+                    <p>Também gosto de compartilhar conhecimentos que adquiri ao longo da minha jornada em Desenvolvimento Web, com o intuito de ajudar outras pessoas na comunidade dev. Sinta-se à vontade para me seguir ou se conectar comigo no <a href="https://www.linkedin.com/in/jta-ads/">LinkedIn</a> e <a href="https://www.instagram.com/mr_castr/">Instagram</a>, onde publico conteúdos úteis sobre programação e desenvolvimento web.</p>
+                    <p>Atualmente, estou aberto a oportunidades onde eu possa aplicar minhas habilidades, continuar aprendendo e crescer profissionalmente. Se você tiver uma boa oportunidade que se encaixe com meu perfil, não hesite em entrar em contato!</p>
+                    <div class="button-projetos">
+                        Contato
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>Minhas habilidades</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
             </div>
             
         </div>
-        <div></div>
-    </div>
-    <div class="about" id="about-me">
-        <div class="about-me" id="about-me">
-            <h1 >Sobre mim</h1>
-            <div class="traco"></div>
-            <p>Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais, principalmente em termos de programação e tecnologia.</p>
-        </div>
-        <div class="bio">
-            <div class="conhecer">
-                <h2>Venha me conhecer!</h2>
-                <p>Sou cristão e casado com Francisca de Sousa Castro e desenvolvedor web com foco em front-end, especializado na criação e manutenção de interfaces modernas e funcionais para sites e aplicações web — sempre com o objetivo de contribuir para o sucesso do produto como um todo.</p>
-                <p>Confira alguns dos meus projetos na seção Projetos para ver um pouco do que venho desenvolvendo.</p>                
-                <p>Também gosto de compartilhar conhecimentos que adquiri ao longo da minha jornada em Desenvolvimento Web, com o intuito de ajudar outras pessoas na comunidade dev. Sinta-se à vontade para me seguir ou se conectar comigo no <a href="https://www.linkedin.com/in/jta-ads/">LinkedIn</a> e <a href="https://www.instagram.com/mr_castr/">Instagram</a>, onde publico conteúdos úteis sobre programação e desenvolvimento web.</p>
-                <p>Atualmente, estou aberto a oportunidades onde eu possa aplicar minhas habilidades, continuar aprendendo e crescer profissionalmente. Se você tiver uma boa oportunidade que se encaixe com meu perfil, não hesite em entrar em contato!</p>
-                <div class="button-projetos">
-                    Contato
-                </div>
+        <div class="project-home" id="project-home">
+            <div class="project">
+                <h1> Projetos</h1>
+                <div class="traco"></div>
+                <p>Apresento a seguir uma seleção de projetos que desenvolvi ao longo da minha trajetória, incluindo trabalhos pessoais e profissionais.</p>
             </div>
-            <div class="skills">
-                <h2>Minhas habilidades</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                </ul>
-            </div>
-        </div>
-        
-    </div>
-    <div class="project-home" id="project-home">
-        <div class="project">
-            <h1> Projetos</h1>
-            <div class="traco"></div>
-            <p>Apresento a seguir uma seleção de projetos que desenvolvi ao longo da minha trajetória, incluindo trabalhos pessoais e profissionais.</p>
-        </div>
-        <div class="container-project">
-            <figure>
-                <img src="assets/img/portifolio.png" alt="site-portifolio">
-            </figure>
-            <div class="description">
-                <h3>Portfólio</h3>
-                <p>Portfólio é meu primeiro projeto Open Source, tecnologia utilizada HTML, CSS e JavaScript fico muito feliz onde cheguei com esse projeto.</p>
-                <div class="button-projetos">
-                    GitHub
-                </div>
-                <div class="button-projetos">
-                    Site
+            <div class="container-project">
+                <figure>
+                    <img src="assets/img/portifolio.png" alt="site-portifolio">
+                </figure>
+                <div class="description">
+                    <h3>Portfólio</h3>
+                    <p>Portfólio é meu primeiro projeto Open Source, tecnologia utilizada HTML, CSS e JavaScript fico muito feliz onde cheguei com esse projeto.</p>
+                    <div class="button-projetos">
+                        GitHub
+                    </div>
+                    <div class="button-projetos">
+                        Site
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-contact" id="contact">
-        <div class="project" >
-            <h1>Contato</h1>
-            <div class="traco"></div>
-            <p>Quer trocar uma ideia? Preencha o formulário aí embaixo e eu falo com você o mais rápido que der!</p>
+        <div class="container-contact" id="contact">
+            <div class="project" >
+                <h1>Contato</h1>
+                <div class="traco"></div>
+                <p>Quer trocar uma ideia? Preencha o formulário aí embaixo e eu falo com você o mais rápido que der!</p>
+            </div>
+            <form action="" method="get" class="form-contact">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Digite seu nome" minlength="5">
+                <label for="email">E-mail</label>
+                <input type="email"  placeholder="Digite seu email">
+                <label for="msg">Mensagem</label>
+                <textarea name="msg" id="msg" minlength="20" maxlength="50" placeholder="Digite a mensagem"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
-        <form action="" method="get" class="form-contact">
-            <label for="nome">Nome</label>
-            <input type="text" placeholder="Digite seu nome" minlength="5">
-            <label for="email">E-mail</label>
-            <input type="email"  placeholder="Digite seu email">
-            <label for="msg">Mensagem</label>
-            <textarea name="msg" id="msg" minlength="20" maxlength="50" placeholder="Digite a mensagem"></textarea>
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
+    </main>
     <footer>
         <div class="footer-home">
             <div class="eu-footer">

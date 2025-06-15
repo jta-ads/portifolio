@@ -14,9 +14,7 @@ p{
 h1{
     text-transform: uppercase;
 }
-body{
-    display: block;
-}
+
 /* cores utilizadas */
 :root{
     --cor1: #2BB7D7;
@@ -48,11 +46,18 @@ nav{
     
     
 }
+main{
+    width: 100%;
+}
+div.navegar{
+    display: flex;
+    align-items: center;
+}
 div.navegar a{
     margin: 30px;
     text-decoration: none;
     color: var(--cor3);
-    
+
 }
 div.img-perfil{
     display:flex;
@@ -64,6 +69,15 @@ div.img-perfil img{
     padding: 10px;
     margin: 0px 0px 0px 50px;
     border-radius: 50%;
+}
+/* menu burguer bar */
+
+div.menu-bar{
+    display: none;
+}
+div.menu-bar i{
+    font-size: 25px;
+    padding-right:30px;
 }
 
 /* Home */
@@ -77,6 +91,7 @@ div.inicio{
     align-items: center;
     justify-content: space-between;
     padding-bottom: 70px;
+    width: 100%;
    
    
 }
@@ -165,7 +180,8 @@ div.bio{
   
 }
 div.conhecer{
-    width: 550px;
+    width: 50%;
+   
 }
 div.conhecer p{
     font-weight: lighter;
@@ -208,13 +224,16 @@ div.project p{
 div.container-project{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 100px;
-    margin: 0 auto;
+    gap:100px;
+    
 }
 div.description{
-    margin: 40px;
-    width: 300px;
+    width: 20%;
+    padding: 0;
+}
+div.description p{
+    /* margin: 40px 0px; */
+    width: 68%;
 
 }
 div.container-project figure img{
@@ -237,7 +256,7 @@ div.container-contact{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 9em;
+    padding: 9em 0;
     flex-direction: column;
 }
 form.form-contact{
@@ -269,12 +288,12 @@ form.form-contact textarea{
     border: none;
 }
 form.form-contact input[type=submit]{
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
     color: var(--cor4);
     background-color: var(--cor2);
     height: 40px;
-    width: 150px;
+    width: 30%;
     padding: 1px;
     
 }
@@ -315,7 +334,7 @@ div.rodape{
 }
 div.rodape div.traco-rodape{
     border-top: thin solid white;
-    width: 500px;
+    width: 50%;
     margin-bottom: 40px;
 }
 div.rodape p{
@@ -323,4 +342,80 @@ div.rodape p{
 }
 div.rodape p a{
     color: var(--cor5);
+}
+
+/* responsividade */
+
+@media (min-width:400px) and (max-width: 850px) {
+    div.menu-bar{
+        display: block;
+    }
+    div.navegar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 88px;
+        background-color: var(--cor4);
+        width: 100%;
+        gap: 0;
+        cursor: pointer;
+        overflow: hidden;
+        
+    }
+    div#menubar{
+        transition: 0.3s;
+    }
+    div.redes-sociais{
+        display: none;
+    }
+    div.inicio h1{
+        font-size: 35px;
+    }
+    div.inicio p{
+        font-size: 16px;
+    }
+    div#me p{
+        width: 90%; 
+    }
+    div.bio{
+        flex-direction: column;
+        padding: 20px;
+    }
+    div.conhecer{
+        width: 100%;
+    }
+    div.skills{
+        padding-top: 30px;
+    }
+    div.container-project{
+        flex-direction: column;
+        padding: 20px;
+        gap: 50px;
+    }
+    div.description{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;   
+    }
+    div.project p{
+        width: 90%;
+    }
+    form.form-contact{
+        width: 70%;
+    }
+    div.footer-home{
+        flex-direction: column;
+        padding: 40px;
+
+    }
+    div.footer-home p{
+        width: 90%;
+        text-align: justify;
+        letter-spacing: -1px;
+    }
 }

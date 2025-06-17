@@ -381,6 +381,9 @@ div.rodape p a{
     div.redes-sociais{
         display: none;
     }
+    div.inicio{
+        padding-bottom: 0;
+    }
     div.inicio h1{
         font-size: 35px;
     }
@@ -390,15 +393,23 @@ div.rodape p a{
     div#me p{
         width: 90%; 
     }
+    div.about{
+        padding-bottom: 0;
+    }
+    div.about h1{
+        padding: 0;
+    }
     div.bio{
         flex-direction: column;
         padding: 20px;
     }
     div.conhecer{
         width: 100%;
+        
     }
     div.skills{
         padding-top: 30px;
+        padding-bottom: 0;
     }
     div.container-project{
         flex-direction: column;
@@ -413,11 +424,17 @@ div.rodape p a{
         align-items: center;
         text-align: justify;   
     }
+    div.project-home{
+        padding-bottom: 0;
+    }
     div.project p{
         width: 90%;
     }
     form.form-contact{
         width: 70%;
+    }
+    div.container-contact{
+        padding-bottom: 10px;
     }
     div.footer-home{
         flex-direction: column;

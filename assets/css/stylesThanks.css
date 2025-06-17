@@ -19,10 +19,12 @@ div.thanks{
     padding: 40px;
     border-radius: 19px;
     background-color: var(--cor4);
+    margin: 50px;
 }
 div.thanks i{
     font-size: 150px;
     color: var(--cor1);
+   
 }
 div.thanks-btn{
     height: 50px;
@@ -35,4 +37,13 @@ div.thanks-btn{
 
 body{
     background-color:var(--cor2) ;
+}
+@media (min-width:320px) and (max-width:490px){
+    div.thanks{
+        width: 50%;
+        font-size: 17px;
+    }
+    div.thanks i{
+        font-size: 70px;
+    }
 }

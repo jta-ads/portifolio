@@ -37,8 +37,8 @@
                     Olá, Eu sou José Ribamar
                 </h1>
                 <p>Desenvolvedor web em início de carreira, focado em criar interfaces modernas e funcionais. Apaixonado por resolver problemas com criatividade e eficiência.</p>
-                <div class="button-projetos">
-                    Projetos
+                <div class="button-projetos" >
+                    <a href="#project-home">Projetos</a>
                 </div>
                 
             </div>
@@ -53,12 +53,12 @@
             <div class="bio">
                 <div class="conhecer">
                     <h2>Venha me conhecer!</h2>
-                    <p>Sou cristão e casado com Francisca de Sousa Castro e desenvolvedor web com foco em front-end, especializado na criação e manutenção de interfaces modernas e funcionais para sites e aplicações web — sempre com o objetivo de contribuir para o sucesso do produto como um todo.</p>
+                    <p>Sou <span>cristão</span> e casado com <span>Francisca de Sousa Castro</span> e <span>desenvolvedor web com foco em front-end</span>, especializado na criação e manutenção de interfaces modernas e funcionais para sites e aplicações web — sempre com o objetivo de contribuir para o sucesso do produto como um todo.</p>
                     <p>Confira alguns dos meus projetos na seção Projetos para ver um pouco do que venho desenvolvendo.</p>                
-                    <p>Também gosto de compartilhar conhecimentos que adquiri ao longo da minha jornada em Desenvolvimento Web, com o intuito de ajudar outras pessoas na comunidade dev. Sinta-se à vontade para me seguir ou se conectar comigo no <a href="https://www.linkedin.com/in/jta-ads/">LinkedIn</a> e <a href="https://www.instagram.com/mr_castr/">Instagram</a>, onde publico conteúdos úteis sobre programação e desenvolvimento web.</p>
-                    <p>Atualmente, estou aberto a oportunidades onde eu possa aplicar minhas habilidades, continuar aprendendo e crescer profissionalmente. Se você tiver uma boa oportunidade que se encaixe com meu perfil, não hesite em entrar em contato!</p>
+                    <p>Também gosto de compartilhar conhecimentos que adquiri ao longo da minha jornada em Desenvolvimento Web, com o intuito de ajudar outras pessoas na comunidade dev. Sinta-se à vontade para me seguir ou se conectar comigo no <a href="https://www.linkedin.com/in/jta-ads/" target="_blank">LinkedIn</a> e <a href="https://www.instagram.com/mr_castr/" target="_blank">Instagram</a>, onde publico conteúdos úteis sobre programação e desenvolvimento web.</p>
+                    <p><span>Atualmente, estou aberto a oportunidades onde eu possa aplicar minhas habilidades, continuar aprendendo e crescer profissionalmente.</span> Se você tiver uma boa oportunidade que se encaixe com meu perfil, não hesite em entrar em contato!</p>
                     <div class="button-projetos">
-                        Contato
+                        <a href="#contact">Contato</a>
                     </div>
                 </div>
                 <div class="skills">
@@ -88,10 +88,10 @@
                     <h3>Portfólio</h3>
                     <p>Portfólio é meu primeiro projeto Open Source, tecnologia utilizada HTML, CSS e JavaScript fico muito feliz onde cheguei com esse projeto.</p>
                     <div class="button-projetos">
-                        GitHub
+                        <a href="https://github.com/jta-ads" target="_blank">GitHub</a>
                     </div>
                     <div class="button-projetos">
-                        Site
+                        <a href="https://jta-ads.github.io/portifolio/" target="_blank">Site</a>
                     </div>
                 </div>
             </div>
@@ -102,13 +102,14 @@
                 <div class="traco"></div>
                 <p>Quer trocar uma ideia? Preencha o formulário aí embaixo e eu falo com você o mais rápido que der!</p>
             </div>
-            <form action="" method="get" class="form-contact">
+            <form action="https://formsubmit.co/jose.ribamar13@gmail.com" method="POST" class="form-contact">
                 <label for="nome">Nome</label>
-                <input type="text" placeholder="Digite seu nome" minlength="5">
+                <input type="text" name="name" placeholder="Digite seu nome" minlength="5" required>
                 <label for="email">E-mail</label>
-                <input type="email"  placeholder="Digite seu email">
+                <input type="email" name="email" placeholder="Digite seu email" required>
                 <label for="msg">Mensagem</label>
-                <textarea name="msg" id="msg" minlength="20" maxlength="50" placeholder="Digite a mensagem"></textarea>
+                <textarea name="message" id="msg" minlength="20" maxlength="50" placeholder="Digite a mensagem" required></textarea>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">           
                 <input type="submit" value="Enviar">
             </form>
         </div>

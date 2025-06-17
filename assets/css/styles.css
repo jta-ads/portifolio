@@ -14,6 +14,13 @@ p{
 h1{
     text-transform: uppercase;
 }
+a{
+    text-decoration: none;
+    color: var(--cor5);
+}
+span{
+    color: var(--cor3);
+}
 
 /* cores utilizadas */
 :root{
@@ -188,6 +195,9 @@ div.conhecer p{
     margin-top: 20px;
     text-align: justify;
 }
+div.conhecer p a{
+    color: var(--cor3);
+}
 div.skills h2{
     margin-bottom: 20px;
 }
@@ -313,6 +323,7 @@ div.footer-home p{
     margin: 15px 0px;
     font-size: 14px;
     width: 70%;
+   
 }
 div.social h1{
     margin-bottom: 15px;
@@ -417,5 +428,84 @@ div.rodape p a{
         width: 90%;
         text-align: justify;
         letter-spacing: -1px;
+    }
+    div.container-project {
+        text-align: center;
+    }
+}
+@media (min-width:320px) and (max-width:399px){
+    div.menu-bar{
+        display: block;
+    }
+    div.navegar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 88px;
+        background-color: var(--cor4);
+        width: 100%;
+        gap: 0;
+        cursor: pointer;
+        overflow: hidden;
+        
+    }
+    div#menubar{
+        transition: 0.3s;
+    }
+    div.redes-sociais{
+        display: none;
+    }
+    div.inicio h1{
+        font-size: 35px;
+    }
+    div.inicio p{
+        font-size: 16px;
+    }
+    div#me p{
+        width: 90%; 
+    }
+    div.bio{
+        flex-direction: column;
+        padding: 20px;
+    }
+    div.conhecer{
+        width: 100%;
+    }
+    div.skills{
+        padding-top: 30px;
+    }
+    div.container-project{
+        flex-direction: column;
+        padding: 20px;
+        gap: 50px;
+    }
+    div.description{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;   
+    }
+    div.project p{
+        width: 90%;
+    }
+    form.form-contact{
+        width: 70%;
+    }
+    div.footer-home{
+        flex-direction: column;
+        padding: 40px;
+
+    }
+    div.footer-home p{
+        width: 90%;
+        text-align: justify;
+        letter-spacing: -1px;
+    }
+    div.container-project img{
+        width: 100%;
     }
 }
